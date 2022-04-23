@@ -97,7 +97,7 @@ const CountriesTable = ({ countries }) => {
 				<button
 					className={styles.heading_gini}
 					onClick={() => setValueAndDirection('gini')}>
-					<div>Gini</div>
+					<div>Income Inequality</div>
 					{value === 'gini' && <SortArrow direction={direction} />}
 				</button>
 			</div>

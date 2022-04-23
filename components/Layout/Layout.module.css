@@ -34,3 +34,9 @@
   justify-content: center;
   align-items: center;
 }
+.themeSwitcher:hover {
+  cursor: pointer;
+}
+.siteTitle:hover {
+  cursor: pointer;
+}

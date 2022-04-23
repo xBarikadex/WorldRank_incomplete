@@ -11,6 +11,9 @@
 
   --font-family: "Poppins", sans-serif;
   --box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+
+  --description-text: black;
+  --text-hover: darkgray;
 }
 
 [data-theme="dark"] {
@@ -22,6 +25,9 @@
   --background-color: #252329;
   --background-color-dark: #3c393f;
   --background-color-light: #120f13;
+
+  --description-text: darkgray;
+  --text-hover: #g0g0g0;
 }
 
 html,

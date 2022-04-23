@@ -3,8 +3,9 @@
     box-sizing: border-box;
     padding: 1.25rem;
     border-radius: .5rem;
-    width: 20rem;
+    width: 18rem;
     text-align: center;
+    height: fit-content;
 }
 .ctryFlag {
     width: 100%;
@@ -19,18 +20,20 @@
     justify-content: space-around;
 }
 .descText {
-    color: darkgray;
+    color: var(--description-text);
     margin: 0;
     text-align: end;
-    max-width: 60%;
-    transition: 0.3s ease color;
 }
 .countryName {
     font-size: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
 }
 .subregion {
     font-weight: 100;
     font-size: .85rem;
+    margin: 0 auto;
+    text-align: center;
 }
 .category {
     margin: 0;
@@ -42,18 +45,21 @@
     box-sizing: border-box;
     border-radius: .5rem;
     overflow: hidden;
+    margin-left: 1rem;
+    width: 70%;
 }
 .ctryInfoRow {
     display: flex;
     background-color: var(--background-color-light);
     padding: 1.25rem;
     justify-content: space-between;
-    margin-bottom: .2rem;
-    max-width: 60rem;
+    margin-bottom: 2px;
 }
 .borderFlag {
-    width: 12.5rem;
+    width: 10rem;
     height: auto;
+    border-radius: .25rem;
+    box-shadow: 0 0 1px 1px #0000007f;
 }
 .ctrysContainer {
     flex-direction: column;
@@ -63,10 +69,56 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 0.75rem;
+}
+.ctryCard {
+    margin-top: 1.25rem;
 }
 .ctryCard:hover {
     cursor: pointer;
 }
+.borderCtryName {
+    text-align: center;
+    max-width: 10rem;
+    transition: 0.3s ease color;
+}
 .ctryCard:hover .borderCtryName {
-    color: lightgray;
+    color: var(--text-hover);
+}
+.indCtryPage {
+    display: flex;
+}
+.timezones {
+    width: 60%;
+}
+.titleNumbers {
+    color: var(--description-text);
+    margin: 0;
+}
+
+@media screen and (max-width: 879px) {
+    .indCtryPage {
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;
+    }
+    .titleCard {
+        width: 100%;
+    }
+    .ctryFlag {
+        width: 50%;
+    }
+    .ctryInfo {
+        margin: 0;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 419px) {
+    .category {
+        justify-content: center;
+    }
+    .borderCtrysContainer {
+        justify-content: center;
+    }
 }
