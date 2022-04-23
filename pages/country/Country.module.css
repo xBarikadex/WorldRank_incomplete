@@ -1,0 +1,72 @@
+.titleCard {
+    background-color: var(--background-color-light);
+    box-sizing: border-box;
+    padding: 1.25rem;
+    border-radius: .5rem;
+    width: 20rem;
+    text-align: center;
+}
+.ctryFlag {
+    width: 100%;
+    border-radius: .25rem;
+}
+.titleCardTop {
+    margin: 1.5rem 0;
+}
+.titleCardBtm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.descText {
+    color: darkgray;
+    margin: 0;
+    text-align: end;
+    max-width: 60%;
+    transition: 0.3s ease color;
+}
+.countryName {
+    font-size: 1.5rem;
+}
+.subregion {
+    font-weight: 100;
+    font-size: .85rem;
+}
+.category {
+    margin: 0;
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+.ctryInfo {
+    box-sizing: border-box;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.ctryInfoRow {
+    display: flex;
+    background-color: var(--background-color-light);
+    padding: 1.25rem;
+    justify-content: space-between;
+    margin-bottom: .2rem;
+    max-width: 60rem;
+}
+.borderFlag {
+    width: 12.5rem;
+    height: auto;
+}
+.ctrysContainer {
+    flex-direction: column;
+    margin: 0;
+}
+.borderCtrysContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.ctryCard:hover {
+    cursor: pointer;
+}
+.ctryCard:hover .borderCtryName {
+    color: lightgray;
+}
